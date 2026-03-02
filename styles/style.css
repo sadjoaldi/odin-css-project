@@ -25,6 +25,8 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 32px;
+    max-width: 900px;
+    margin: auto;
 
     span {
       font-size: 24px;
