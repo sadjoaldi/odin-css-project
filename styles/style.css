@@ -26,6 +26,11 @@ header {
     justify-content: space-between;
     margin-bottom: 32px;
 
+    span {
+      font-size: 24px;
+      color: var(--heroLogoTextColor);
+    }
+
     ul {
       display: flex;
       gap: 1rem;
@@ -42,19 +47,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    height: 400px;
 
     .about {
       max-width: 500px;
-      margin-bottom: 96px;
 
       h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
+        font-size: 48px;
+        font-weight: 900;
       }
 
       p {
         color: var(--heroSecondaryTextAndLinkColor);
+        font-size: 18px;
         margin-bottom: 1rem;
+        width: 88%;
       }
 
       button {
@@ -70,7 +79,6 @@ header {
 }
 
 main {
-  /* padding: 2rem; */
   .information {
     max-width: 800px;
     margin: 16px auto 96px;
@@ -79,6 +87,8 @@ main {
       color: var(--informationHeaderTextColor);
       margin-bottom: 1rem;
       text-align: center;
+      font-size: 36px;
+      font-weight: 900;
     }
 
     .info-container {
@@ -91,11 +101,15 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: var(--quoteSectionColor);
+        border: 1px solid var(--buttonColor);
         padding: 1rem;
         border-radius: 8px;
         max-width: 200px;
         margin: auto;
+
+        img {
+          border-radius: 8px;
+        }
 
         p {
           color: var(--informationHeaderTextColor);
@@ -105,20 +119,22 @@ main {
     }
   }
 
-  .testimony {
+  .testimonial {
     background-color: var(--quoteSectionColor);
     padding: 2rem;
 
     .testimony-content {
-      max-width: 600px;
+      max-width: 800px;
       margin: auto;
 
       p {
         color: var(--informationHeaderTextColor);
         font-style: italic;
+        font-size: 36px;
+        font-weight: 300;
       }
 
-      h4 {
+      h3 {
         color: var(--informationHeaderTextColor);
         text-align: right;
         margin-top: 1rem;
@@ -132,13 +148,14 @@ main {
     .callToAction {
       background-color: var(--buttonColor);
       color: white;
-      max-width: 700px;
+      width: 700px;
       margin: auto;
       display: flex;
       border-radius: 8px;
       justify-content: center;
       align-items: center;
       padding: 0.75rem 1.5rem;
+      gap: 90px;
 
       cursor: pointer;
 
